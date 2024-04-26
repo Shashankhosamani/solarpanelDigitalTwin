@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{67FB259D-AB7F-7385-20D5-919948C27F67}</ProjectGuid>
+    <ProjectGuid>{E3BEA553-008B-5454-4672-09A09CEC2E29}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.TextMeshPro</AssemblyName>
@@ -102,9 +102,9 @@
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SpriteAnimator.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_MeshInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_FontFeatureTable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_ObjectPool.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_TextElement_Legacy.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_UpdateRegistery.cs" />
+    <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_ObjectPool.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_FontFeaturesCommon.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_ResourcesManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.4\Scripts\Runtime\TMP_SubMesh.cs" />
@@ -664,7 +664,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{B220883F-3920-095B-406F-5EDE5BAE07B3}</Project>
+      <Project>{2F9DFBF5-9539-1C53-D582-4895D298F21F}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
