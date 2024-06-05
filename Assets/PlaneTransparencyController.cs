@@ -6,7 +6,6 @@ public class PlaneTransparencyController : MonoBehaviour
     public Slider transparencySlider; // Reference to the UI slider
     public Renderer planeRenderer; // Reference to the Renderer of the plane
     public Text transparencyText; // Reference to the text object
-
     public float transparency; // Add this line
 
     void Start()
@@ -22,20 +21,20 @@ public class PlaneTransparencyController : MonoBehaviour
 
     public void SetTransparency(float alpha)
     {
-        Debug.Log($"SetTransparency called with alpha: {alpha}");
         // Adjust the transparency of the plane's material
         Color newColor = planeRenderer.material.color;
         newColor.a = alpha;
-        
         planeRenderer.material.color = newColor;
 
         // Update the text object with the transparency percentage
         int transparencyPercentage = Mathf.RoundToInt(alpha * 100);
         transparencyText.text = transparencyPercentage + "%";
 
-        transparency = alpha;// Assign the transparency value
-        Debug.Log($"alpha: {alpha}");
-        
+        transparency = alpha; // Assign the transparency value
+    }
 
+    public void UpdateSliderValue(float value)
+    {
+        transparencySlider.value = value;
     }
 }
