@@ -1,19 +1,19 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/solarpanelDigitalTwin/Packages/manifest.json
+    m_FilePath: C:/Users/Sohan/Downloads/solarpanelDigitalTwin-master/solarpanelDigitalTwin-master/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638494752519078251
+      ticks: 638530721880969934
     m_Hash: 4070978512
   m_LockFileStatus:
-    m_FilePath: D:/solarpanelDigitalTwin/Packages/packages-lock.json
+    m_FilePath: C:/Users/Sohan/Downloads/solarpanelDigitalTwin-master/solarpanelDigitalTwin-master/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638494752519078251
+      ticks: 638530721880969934
     m_Hash: 2142867407
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: D:\solarpanelDigitalTwin\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: C:\Users\Sohan\Downloads\solarpanelDigitalTwin-master\solarpanelDigitalTwin-master\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -112,7 +112,6 @@ m_PackageAssets:
         - 2.1.0-preview.6
         - 2.1.0
         - 2.2.0
-        - 2.3.1
         compatible:
         - 1.3.9
         - 1.4.9
@@ -182,7 +181,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: D:\solarpanelDigitalTwin\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: C:\Users\Sohan\Downloads\solarpanelDigitalTwin-master\solarpanelDigitalTwin-master\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -240,7 +239,6 @@ m_PackageAssets:
         - 3.0.25
         - 3.0.26
         - 3.0.27
-        - 3.0.28
         compatible:
         - 1.0.2
         - 1.0.6
@@ -283,7 +281,6 @@ m_PackageAssets:
         - 3.0.25
         - 3.0.26
         - 3.0.27
-        - 3.0.28
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -323,7 +320,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: D:\solarpanelDigitalTwin\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
+      resolvedPath: C:\Users\Sohan\Downloads\solarpanelDigitalTwin-master\solarpanelDigitalTwin-master\Library\PackageCache\com.unity.ide.visualstudio@2.0.7
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -428,7 +425,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: D:\solarpanelDigitalTwin\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: C:\Users\Sohan\Downloads\solarpanelDigitalTwin-master\solarpanelDigitalTwin-master\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -501,7 +498,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.24
       source: 1
-      resolvedPath: D:\solarpanelDigitalTwin\Library\PackageCache\com.unity.test-framework@1.1.24
+      resolvedPath: C:\Users\Sohan\Downloads\solarpanelDigitalTwin-master\solarpanelDigitalTwin-master\Library\PackageCache\com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -635,7 +632,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.4
       source: 1
-      resolvedPath: D:\solarpanelDigitalTwin\Library\PackageCache\com.unity.textmeshpro@3.0.4
+      resolvedPath: C:\Users\Sohan\Downloads\solarpanelDigitalTwin-master\solarpanelDigitalTwin-master\Library\PackageCache\com.unity.textmeshpro@3.0.4
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -760,7 +757,6 @@ m_PackageAssets:
         - 3.2.0-pre.6
         - 3.2.0-pre.7
         - 3.2.0-pre.8
-        - 3.2.0-pre.9
         - 4.0.0-pre.1
         - 4.0.0-pre.2
         compatible:
@@ -779,7 +775,6 @@ m_PackageAssets:
         - 3.2.0-pre.6
         - 3.2.0-pre.7
         - 3.2.0-pre.8
-        - 3.2.0-pre.9
         verified: 3.0.8
       dependencies:
       - name: com.unity.ugui
@@ -822,7 +817,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.7
       source: 1
-      resolvedPath: D:\solarpanelDigitalTwin\Library\PackageCache\com.unity.timeline@1.4.7
+      resolvedPath: C:\Users\Sohan\Downloads\solarpanelDigitalTwin-master\solarpanelDigitalTwin-master\Library\PackageCache\com.unity.timeline@1.4.7
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -2820,7 +2815,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: D:\solarpanelDigitalTwin\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: C:\Users\Sohan\Downloads\solarpanelDigitalTwin-master\solarpanelDigitalTwin-master\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -2886,5 +2881,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: D:/solarpanelDigitalTwin/Packages
+m_ProjectPath: C:/Users/Sohan/Downloads/solarpanelDigitalTwin-master/solarpanelDigitalTwin-master/Packages
 m_EditorVersion: 2020.3.8f1 (507919d4fff5)
