@@ -1,10 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SolarPanel6 : SolarPanelBase
+public class SolarPanel6 : MonoBehaviour
 {
     public Light sun;
-    public Slider dustSlider;
     public ParticleSystem rainParticleSystem, cloudParticleSystem, fogParticleSystem;
     public Text powerOutputText, dustIntensityText;
 
@@ -13,6 +12,9 @@ public class SolarPanel6 : SolarPanelBase
     public float basePerformanceRatio = 0.75f;
 
     public BatteryManager batteryManager;  // Reference to the BatteryManager
+    //public DustController dustController; // Reference to the DustController
+
+    //private float dustEffect = 1.0f; // Effect of dust on solar panel efficiency
 
     // Use the 'new' keyword to explicitly hide the inherited member
     public new float CurrentPowerOutput { get; private set; }
@@ -28,30 +30,27 @@ public class SolarPanel6 : SolarPanelBase
         UpdateDustIntensityDisplay();
     }
 
-    protected override void UpdatePowerOutput()
+    private void UpdatePowerOutput()
     {
         float sunElevationSine = CalculateSimulatedElevation();
         if (sunElevationSine > 0)
         {
-            CurrentPowerOutput = CalculateSolarPower(sunElevationSine);
-            powerOutputText.text = $"Panel-6:= {CurrentPowerOutput.ToString("F2")} Watts";
+            //float dustIntensity = dustController.GetDustAmount(); // Retrieve dust amount from DustController
+           // float dustEffect = 1.0f - (dustIntensity * 0.5f); // Adjust dust impact based on intensity
+
+            //CurrentPowerOutput = CalculateSolarPower(sunElevationSine, dustEffect);
+            powerOutputText.text = $"Panel: {CurrentPowerOutput.ToString("F2")} Watts";
         }
         else
         {
             CurrentPowerOutput = 0;
+            powerOutputText.text = $"Panel: {CurrentPowerOutput.ToString("F2")} Watts";
         }
-        powerOutputText.text = $"Panel-6:= {CurrentPowerOutput.ToString("F2")} Watts";
     }
 
-    private void UpdateDustIntensityDisplay()
-    {
-        dustIntensityText.text = "Dust Intensity: " + (dustSlider.value * 100).ToString("F0") + "%";
-    }
-
-    private float CalculateSolarPower(float sunElevationSine)
+    private float CalculateSolarPower(float sunElevationSine, float dustEffect)
     {
         float irradiance = sun.intensity * 1000; // Assuming sun intensity is scaled to 1 for max 1000 W/m^2
-        float dustEffect = 1.0f - (dustSlider.value * 0.5f);
         float rainEffect = 1.0f - GetRainEffect();
         float cloudEffect = 1.0f - GetCloudEffect();
         float fogEffect = 1.0f - GetFogEffect();
@@ -68,21 +67,13 @@ public class SolarPanel6 : SolarPanelBase
 
     private float GetRainEffect()
     {
-
         if (rainParticleSystem.gameObject.activeInHierarchy)
         {
-            // Assuming emission rate can give us a scale from 0 to 1000
-            // Adjusting formula to have the worst-case scenario (heaviest rain) at 20% production capacity
-            // and the best case during rain at 40% production capacity.
             float rainImpact = Mathf.Clamp01(rainParticleSystem.emission.rateOverTime.constant / 100000);
             return 0.2f + 0.2f * (1f - rainImpact);  // Keeps output between 20% to 40%
         }
         return 0.0f; // No rain means no reduction in solar power output
-
-
     }
-
-
 
     private float GetCloudEffect()
     {
@@ -102,5 +93,12 @@ public class SolarPanel6 : SolarPanelBase
             return 0.5f + 0.5f * (1f - fogImpact);  // Keeps output between 50% to 100%
         }
         return 0.0f;
+    }
+
+    private void UpdateDustIntensityDisplay()
+    {
+        // Example: Display dust intensity if needed
+        // float dustIntensity = dustController.GetDustAmount();
+        // dustIntensityText.text = $"Dust Intensity: {(dustIntensity * 100).ToString("F0")}%";
     }
 }
