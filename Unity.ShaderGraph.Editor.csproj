@@ -307,8 +307,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.5.1\Editor\Data\Nodes\Input\Texture\CubemapAssetNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.5.1\Editor\Data\Nodes\Math\Trigonometry\SineNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.5.1\Editor\Data\Nodes\Math\Basic\MultiplyNode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.5.1\Editor\Data\Nodes\Math\Vector\ProjectionNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.5.1\Editor\Drawing\Inspector\PropertyDrawerUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@10.5.1\Editor\Data\Nodes\Math\Vector\ProjectionNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.5.1\Editor\Drawing\Controls\PopupControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.5.1\Editor\Data\Nodes\Input\Gradient\BlackbodyNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@10.5.1\Editor\Drawing\Views\Slots\LabelSlotControlView.cs" />

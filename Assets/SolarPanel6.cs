@@ -5,23 +5,23 @@ public class SolarPanel6 : MonoBehaviour
 {
     public Light sun;
     public ParticleSystem rainParticleSystem, cloudParticleSystem, fogParticleSystem;
-    public Text powerOutputText, dustIntensityText;
+    public Text powerOutputText, dustIntensityText, energyGeneratedText;
 
     public float panelArea = 1.0f;
     public float panelEfficiency = 0.15f;
     public float basePerformanceRatio = 0.75f;
 
     public BatteryManager batteryManager;  // Reference to the BatteryManager
-    //public DustController dustController; // Reference to the DustController
-
-    //private float dustEffect = 1.0f; // Effect of dust on solar panel efficiency
 
     // Use the 'new' keyword to explicitly hide the inherited member
     public new float CurrentPowerOutput { get; private set; }
 
+    private float accumulatedEnergy = 0f; // in Watt-hours
+
     void Update()
     {
         UpdatePowerOutput();
+        UpdateEnergyGenerated();
         if (batteryManager != null)
         {
             // Convert watts to kWh and add to battery storage
@@ -35,16 +35,27 @@ public class SolarPanel6 : MonoBehaviour
         float sunElevationSine = CalculateSimulatedElevation();
         if (sunElevationSine > 0)
         {
-            //float dustIntensity = dustController.GetDustAmount(); // Retrieve dust amount from DustController
-           // float dustEffect = 1.0f - (dustIntensity * 0.5f); // Adjust dust impact based on intensity
-
-            //CurrentPowerOutput = CalculateSolarPower(sunElevationSine, dustEffect);
+            float dustEffect = 1.0f; // Replace with actual dust effect calculation if available
+            CurrentPowerOutput = CalculateSolarPower(sunElevationSine, dustEffect);
             powerOutputText.text = $"Panel: {CurrentPowerOutput.ToString("F2")} Watts";
         }
         else
         {
             CurrentPowerOutput = 0;
             powerOutputText.text = $"Panel: {CurrentPowerOutput.ToString("F2")} Watts";
+        }
+    }
+
+    private void UpdateEnergyGenerated()
+    {
+        // Calculate energy generated in this frame (Watt-hours)
+        float energyThisFrame = CurrentPowerOutput * Time.deltaTime / 3600f;
+        accumulatedEnergy += energyThisFrame;
+
+        // Update energy generated text
+        if (energyGeneratedText != null)
+        {
+            energyGeneratedText.text = $"Energy Generated: {accumulatedEnergy.ToString("F2")} Wh";
         }
     }
 
@@ -100,5 +111,11 @@ public class SolarPanel6 : MonoBehaviour
         // Example: Display dust intensity if needed
         // float dustIntensity = dustController.GetDustAmount();
         // dustIntensityText.text = $"Dust Intensity: {(dustIntensity * 100).ToString("F0")}%";
+    }
+
+    // Method to get total energy generated
+    public float GetTotalEnergyGenerated()
+    {
+        return accumulatedEnergy;
     }
 }
