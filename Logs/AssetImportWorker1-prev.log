@@ -1,0 +1,101 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 22631.3593; Version 2009; 64bit' Language: 'en' Physical Memory: 7541 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/solarpanelDigitalTwin
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+59010
+Successfully changed project path to: D:/solarpanelDigitalTwin
+D:/solarpanelDigitalTwin
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 85.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/solarpanelDigitalTwin/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   
+    VRAM:     3950 MB
+    Driver:   31.0.15.4626
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002315 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 75.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.304 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004315 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 68.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.670 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.44 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2212 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2683.
+Total: 4.638900 ms (FindLiveObjects: 1.019700 ms CreateObjectMapping: 0.222700 ms MarkObjects: 3.313400 ms  DeleteObjects: 0.079600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/solar wiper movement/mp4.mat
+  artifactKey: Guid(315918f3822582c4986f2ffa568b7f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/solar wiper movement/mp4.mat using Guid(315918f3822582c4986f2ffa568b7f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e68bae3761a010444eb367b002e4a5bf') in 0.355352 seconds
+  Import took 0.384936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000824 seconds.
+  path: Assets/solar wiper movement/mp1.mat
+  artifactKey: Guid(031a0a66b9f4f5a46b4cad5df4d45667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/solar wiper movement/mp1.mat using Guid(031a0a66b9f4f5a46b4cad5df4d45667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba1c6c22b470744a2d3e8ce7e3974c6e') in 0.037865 seconds
+  Import took 0.058352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000651 seconds.
+  path: Assets/solar wiper movement/mp2.mat
+  artifactKey: Guid(3645eb58e9be8324fb8d7ddb00dc005e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/solar wiper movement/mp2.mat using Guid(3645eb58e9be8324fb8d7ddb00dc005e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb3a9a704585701e8986b023dcd1e66') in 0.035431 seconds
+  Import took 0.059512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000708 seconds.
+  path: Assets/solar wiper movement/mp3.mat
+  artifactKey: Guid(2bf80155ccb9d0f4eb97f4d735f175b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/solar wiper movement/mp3.mat using Guid(2bf80155ccb9d0f4eb97f4d735f175b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5785b310bb9cee3c2a807f450ead5515') in 0.056675 seconds
+  Import took 0.072947 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

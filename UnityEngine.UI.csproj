@@ -265,11 +265,11 @@
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\SpecializedCollections\IndexedSet.cs">
       <Link>Runtime\UI\Core\SpecializedCollections\IndexedSet.cs</Link>
     </Compile>
-    <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\EventTriggerType.cs">
-      <Link>Runtime\EventSystem\EventTriggerType.cs</Link>
-    </Compile>
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\MaskableGraphic.cs">
       <Link>Runtime\UI\Core\MaskableGraphic.cs</Link>
+    </Compile>
+    <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\EventTriggerType.cs">
+      <Link>Runtime\EventSystem\EventTriggerType.cs</Link>
     </Compile>
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\MultipleDisplayUtilities.cs">
       <Link>Runtime\UI\Core\MultipleDisplayUtilities.cs</Link>

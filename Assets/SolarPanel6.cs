@@ -6,12 +6,12 @@ public class SolarPanel6 : MonoBehaviour
     public Light sun;
     public ParticleSystem rainParticleSystem, cloudParticleSystem, fogParticleSystem;
     public Text powerOutputText;
+    public Text energyGeneratedText; // Ensure you assign this in the inspector
 
     public float panelArea = 1.0f;
     public float panelEfficiency = 0.15f;
     public float basePerformanceRatio = 0.75f;
 
-    
     public SolarPanelDustAccumulator dustAccumulator; // Reference to the dust accumulator
 
     // Use the 'new' keyword to explicitly hide the inherited member
@@ -22,7 +22,7 @@ public class SolarPanel6 : MonoBehaviour
     void Update()
     {
         UpdatePowerOutput();
-        
+        UpdateEnergyGenerated();
     }
 
     private void UpdatePowerOutput()
@@ -41,7 +41,18 @@ public class SolarPanel6 : MonoBehaviour
         }
     }
 
-   
+    private void UpdateEnergyGenerated()
+    {
+        // Calculate energy generated in this frame (Watt-hours)
+        float energyThisFrame = CurrentPowerOutput * Time.deltaTime;
+        accumulatedEnergy += energyThisFrame;
+
+        // Update energy generated text
+        if (energyGeneratedText != null)
+        {
+            energyGeneratedText.text = $"Energy Generated: {accumulatedEnergy.ToString("F2")} Wh";
+        }
+    }
 
     private float CalculateSolarPower(float sunElevationSine, float dustEffect)
     {
@@ -62,12 +73,14 @@ public class SolarPanel6 : MonoBehaviour
 
     private float GetRainEffect()
     {
-        if (rainParticleSystem.gameObject.activeInHierarchy)
+        if (rainParticleSystem.gameObject.activeInHierarchy && cloudParticleSystem.gameObject.activeInHierarchy)
         {
             float rainImpact = Mathf.Clamp01(rainParticleSystem.emission.rateOverTime.constant / 100000);
-            return 0.2f + 0.2f * (1f - rainImpact);  // Keeps output between 20% to 40%
+            float cloudImpact = Mathf.Clamp01(cloudParticleSystem.emission.rateOverTime.constant / 100000);
+            float combinedImpact = rainImpact+cloudImpact;
+            return 0.2f + 0.2f * (1f - combinedImpact);  // Keeps output between 20% to 40%
         }
-        return 0.0f; // No rain means no reduction in solar power output
+        return 0.0f; // No rain or cloud means no reduction in solar power output
     }
 
     private float GetCloudEffect()
@@ -94,7 +107,7 @@ public class SolarPanel6 : MonoBehaviour
     {
         // Example: Display dust intensity if needed
         float dustIntensity = dustAccumulator.GetCurrentDustAmount();
-       
+        // Update dust intensity display logic here if needed
     }
 
     // Method to get total energy generated

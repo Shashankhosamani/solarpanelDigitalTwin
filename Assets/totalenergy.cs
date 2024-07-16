@@ -25,7 +25,7 @@ public class totalenergy : MonoBehaviour
         // Update total energy generated text
         if (totalEnergyGeneratedText != null)
         {
-            totalEnergyGeneratedText.text = $"Total Energy Generated: {totalEnergy.ToString("F2")} Wh";
+            totalEnergyGeneratedText.text = $"Total Energy:{totalEnergy.ToString("F2")} Wh";
         }
     }
 }
