@@ -58,14 +58,14 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\AgentEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\BehaviorParametersEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\DemonstrationImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\RenderTextureSensorComponentEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\EditorUtilities.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\AgentEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\BrainParametersDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\CameraSensorComponentEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\RenderTextureSensorComponentEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\DemonstrationDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\EditorUtilities.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Editor\RayPerceptionSensorComponentBaseEditor.cs" />
   </ItemGroup>
   <ItemGroup>

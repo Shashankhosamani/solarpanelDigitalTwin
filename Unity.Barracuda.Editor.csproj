@@ -60,12 +60,12 @@
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\HalfHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\Generated\Onnx.cs" />
-    <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\ONNXLayout.cs" />
     <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\NNModelImporter.cs" />
     <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\ONNXModelImporter.cs" />
     <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\ONNXNodeWrapper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\ONNXTensor.cs" />
     <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\ONNXModelImporterEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\ONNXLayout.cs" />
+    <Compile Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\ONNXTensor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.barracuda@1.0.4\Barracuda\Editor\Unity.Barracuda.Editor.asmdef" />

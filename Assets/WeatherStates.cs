@@ -46,7 +46,7 @@ public class WeatherStates : MonoBehaviour
     public void CloudsDay()
     {
         RenderSettings.skybox = overcastSkyBox;
-        clouds.SetActive(true);
+        clouds.SetActive(false);
         rain.SetActive(false);
         nightRainClouds.SetActive(false);
         sun.SetActive(true);

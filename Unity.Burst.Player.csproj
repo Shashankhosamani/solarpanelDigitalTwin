@@ -60,13 +60,20 @@
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\F16C.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\BurstCompileAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Sse3.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\DiagnosticId.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Ssse3.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\v64.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\Common.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\SimdDebugViews.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\v128.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\v256.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\CompilerServices\Loop.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\BurstCompiler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Popcnt.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\FunctionPointer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Sse4_1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\NoAliasAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Sse3.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Ssse3.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\v64.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\CompilerServices\Aliasing.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Sse2.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Sse4_2.cs" />
@@ -74,20 +81,13 @@
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Avx2.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Fma.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\BurstCompilerOptions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\v256.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\CompilerServices\Loop.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\BurstString.Float.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\BurstCompiler.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Popcnt.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\FunctionPointer.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Common.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\CompilerServices\AssumeRangeAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\SharedStatic.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\BurstExecutionEnvironment.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Sse4_1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\SharedStatic.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Avx.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Sse.cs" />
-    <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\NoAliasAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\Intrinsics\x86\Csr.cs" />
     <Compile Include="Library\PackageCache\com.unity.burst@1.3.4\Runtime\BurstString.cs" />
   </ItemGroup>

@@ -13,6 +13,9 @@ public class AppManager : MonoBehaviour
     public Text currentWeatherText, tempText, currentTimeText;
     public WeatherStates weatherController;
 
+    public delegate void WeatherDataUpdated(float shortwaveRadiation, bool isDay);
+    public event WeatherDataUpdated OnWeatherDataUpdated;
+
     private void Start()
     {
         timer = appRefresh;
@@ -21,7 +24,7 @@ public class AppManager : MonoBehaviour
 
     public IEnumerator GetWeather(float lat, float lon)
     {
-        var weatherAPI = new UnityWebRequest($"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&hourly=temperature_2m,cloud_cover,weathercode&timezone=auto")
+        var weatherAPI = new UnityWebRequest($"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&hourly=temperature_2m,cloud_cover,weathercode,shortwave_radiation&timezone=auto")
         {
             downloadHandler = new DownloadHandlerBuffer()
         };
@@ -34,7 +37,6 @@ public class AppManager : MonoBehaviour
         }
 
         JSONNode weatherInfo = JSON.Parse(weatherAPI.downloadHandler.text);
-        
 
         // Get the current local time
         DateTime localTime = DateTime.Now;
@@ -44,7 +46,11 @@ public class AppManager : MonoBehaviour
         tempText.text = "Current temperature: " + Mathf.Floor(weatherInfo["current_weather"]["temperature"].AsFloat) + "°C";
 
         int weatherCode = weatherInfo["current_weather"]["weathercode"].AsInt;
+        float shortwaveRadiation = weatherInfo["hourly"]["shortwave_radiation"][0].AsFloat; // Assuming the first entry corresponds to the current hour
+
         ApplyWeatherEffect(weatherCode, isDay);
+
+        OnWeatherDataUpdated?.Invoke(shortwaveRadiation, isDay); // Raise the event
 
         print(weatherInfo["current_weather"]["weathercode"]);
     }
@@ -132,6 +138,13 @@ public class AppManager : MonoBehaviour
             case 80:
             case 81:
             case 82:
+                if (isDay) weatherController.RainDay();
+                else weatherController.RainNight();
+                break;
+
+            case 95:
+            case 96:
+            case 99:
                 if (isDay) weatherController.RainDay();
                 else weatherController.RainNight();
                 break;

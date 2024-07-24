@@ -58,9 +58,19 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\AgentInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityRlInitializationOutput.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\Header.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\EngineConfiguration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityToExternal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\SpaceType.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityRlOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\Command.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\BrainParameters.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\DemonstrationMeta.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityToExternalGrpc.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityRlInitializationInput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\AgentInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityRlInput.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityInput.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityOutput.cs" />
@@ -68,18 +78,8 @@
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\AgentAction.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\Observation.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\Capabilities.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\EngineConfiguration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityToExternal.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\CustomResetParameters.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\SpaceType.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityRlOutput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\Command.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\BrainParameters.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\DemonstrationMeta.cs" />
     <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityMessage.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityToExternalGrpc.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\CommunicatorObjects\UnityRlInitializationInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.ml-agents@1.0.8\Runtime\Grpc\Unity.ML-Agents.CommunicatorObjects.asmdef" />
