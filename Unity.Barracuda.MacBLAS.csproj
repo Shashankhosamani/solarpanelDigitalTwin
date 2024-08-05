@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{27B060CD-FA42-DA90-F244-9D79494029DF}</ProjectGuid>
+    <ProjectGuid>{95B9E53A-3090-4DCE-BA61-1237EC632020}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Barracuda.MacBLAS</AssemblyName>
@@ -887,15 +887,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Barracuda.csproj">
-      <Project>{C8D272F5-38D7-8CB9-FEA6-3EDB8803189E}</Project>
+      <Project>{F31D5540-A184-CD0C-FAB0-DE1563E54B91}</Project>
       <Name>Unity.Barracuda</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{75AD7EE9-CE22-D4EA-6F5C-93DF60AB5699}</Project>
+      <Project>{B6F16083-E2A9-6164-1D6C-8E79F85B2069}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{2F9DFBF5-9539-1C53-D582-4895D298F21F}</Project>
+      <Project>{15104686-FEAC-A9A4-355D-6AEBBD24C745}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

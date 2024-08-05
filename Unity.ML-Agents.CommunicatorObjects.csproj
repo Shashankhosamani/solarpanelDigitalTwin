@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{70845F8D-DBE8-AC8C-45DD-334653A6BA49}</ProjectGuid>
+    <ProjectGuid>{EFDDA3C3-6047-BDAF-E5E7-D9B650E76847}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.ML-Agents.CommunicatorObjects</AssemblyName>
@@ -908,11 +908,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{75AD7EE9-CE22-D4EA-6F5C-93DF60AB5699}</Project>
+      <Project>{B6F16083-E2A9-6164-1D6C-8E79F85B2069}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{2F9DFBF5-9539-1C53-D582-4895D298F21F}</Project>
+      <Project>{15104686-FEAC-A9A4-355D-6AEBBD24C745}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

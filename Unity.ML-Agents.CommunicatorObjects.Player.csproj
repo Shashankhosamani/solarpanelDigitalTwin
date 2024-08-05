@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9A6400FF-1360-A6A3-3432-09A116D29500}</ProjectGuid>
+    <ProjectGuid>{528A3B05-FA0C-0734-1648-39F41313925E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.ML-Agents.CommunicatorObjects</AssemblyName>
@@ -836,7 +836,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{507D25D4-B3E3-558D-A21D-8B4424F6D1AD}</Project>
+      <Project>{FFB9C04A-9654-902A-DD33-4FCA5830B7F3}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>

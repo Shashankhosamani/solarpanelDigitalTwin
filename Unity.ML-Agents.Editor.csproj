@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{421638B4-C0ED-0520-8EA2-4357B1A938E9}</ProjectGuid>
+    <ProjectGuid>{9D435C14-7319-94BD-8D94-9F07A7DF6FC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.ML-Agents.Editor</AssemblyName>
@@ -899,31 +899,31 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.ML-Agents.csproj">
-      <Project>{C84CBFB8-3EC9-24E0-3CBE-7EF369EE829D}</Project>
+      <Project>{1BBD8C07-70D3-4C29-D8AD-CB4A6770CB51}</Project>
       <Name>Unity.ML-Agents</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Barracuda.csproj">
-      <Project>{C8D272F5-38D7-8CB9-FEA6-3EDB8803189E}</Project>
+      <Project>{F31D5540-A184-CD0C-FAB0-DE1563E54B91}</Project>
       <Name>Unity.Barracuda</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ML-Agents.CommunicatorObjects.csproj">
-      <Project>{70845F8D-DBE8-AC8C-45DD-334653A6BA49}</Project>
+      <Project>{EFDDA3C3-6047-BDAF-E5E7-D9B650E76847}</Project>
       <Name>Unity.ML-Agents.CommunicatorObjects</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{75AD7EE9-CE22-D4EA-6F5C-93DF60AB5699}</Project>
+      <Project>{B6F16083-E2A9-6164-1D6C-8E79F85B2069}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{2F9DFBF5-9539-1C53-D582-4895D298F21F}</Project>
+      <Project>{15104686-FEAC-A9A4-355D-6AEBBD24C745}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{724FA3D9-458A-E8A2-F0F6-76A7EB19E518}</Project>
+      <Project>{607659B9-FDC8-44F6-B6A9-E39E9C88EF3B}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{A77F7ABF-4855-BB85-F846-F6CF2BB39F01}</Project>
+      <Project>{E9EF854C-0B4E-D07D-E824-2D55343B2FE1}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

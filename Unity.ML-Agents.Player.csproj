@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AF971013-21BF-FF3B-F757-3BDEBA7EA8B7}</ProjectGuid>
+    <ProjectGuid>{52F755B2-98A1-1F76-4A5C-64EA3114E189}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.ML-Agents</AssemblyName>
@@ -879,15 +879,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Barracuda.Player.csproj">
-      <Project>{D5D6A66B-197A-2F23-44F6-E5D7F3ED64C4}</Project>
+      <Project>{AA157CF2-B697-C46A-0A46-788E1AE5421F}</Project>
       <Name>Unity.Barracuda.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ML-Agents.CommunicatorObjects.Player.csproj">
-      <Project>{9A6400FF-1360-A6A3-3432-09A116D29500}</Project>
+      <Project>{528A3B05-FA0C-0734-1648-39F41313925E}</Project>
       <Name>Unity.ML-Agents.CommunicatorObjects.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{507D25D4-B3E3-558D-A21D-8B4424F6D1AD}</Project>
+      <Project>{FFB9C04A-9654-902A-DD33-4FCA5830B7F3}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>

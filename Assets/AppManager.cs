@@ -2,23 +2,58 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UI;
 using SimpleJSON;
+using UnityEngine.UI;
 
 public class AppManager : MonoBehaviour
 {
     public float appRefresh;
-    public float lat, lon;
     private float timer;
     public Text currentWeatherText, tempText, currentTimeText;
     public WeatherStates weatherController;
 
+    // UI Elements
+    public InputField latitudeInput;
+    public InputField longitudeInput;
+    public Button submitButton;
+
+    private float lat;
+    private float lon;
+
     public delegate void WeatherDataUpdated(float shortwaveRadiation, bool isDay);
     public event WeatherDataUpdated OnWeatherDataUpdated;
 
-    private void Start()
+   void Start()
     {
+        lat = 0f; // Default latitude
+        lon = 0f; // Default longitude
+
+        submitButton.onClick.AddListener(OnSubmit);
+
         timer = appRefresh;
+    }
+
+    public void OnSubmit()
+    {
+        if (float.TryParse(latitudeInput.text, out float parsedLat))
+        {
+            lat = parsedLat;
+        }
+        else
+        {
+            Debug.LogError("Invalid latitude input");
+        }
+
+        if (float.TryParse(longitudeInput.text, out float parsedLon))
+        {
+            lon = parsedLon;
+        }
+        else
+        {
+            Debug.LogError("Invalid longitude input");
+        }
+
+        StopCoroutine(nameof(GetWeather));
         StartCoroutine(GetWeather(lat, lon));
     }
 
@@ -32,27 +67,52 @@ public class AppManager : MonoBehaviour
 
         if (weatherAPI.isNetworkError || weatherAPI.isHttpError)
         {
-            print("Failed to get data");
+            Debug.LogError("Failed to get data: " + weatherAPI.error);
             yield break;
         }
 
         JSONNode weatherInfo = JSON.Parse(weatherAPI.downloadHandler.text);
+        Debug.Log(weatherInfo);
 
-        // Get the current local time
-        DateTime localTime = DateTime.Now;
+        // Extract the timezone from the API response
+        string timeZoneId = weatherInfo["timezone"];
+        if (string.IsNullOrEmpty(timeZoneId))
+        {
+            Debug.LogError("Time zone information is missing from the API response");
+            yield break;
+        }
+
+        // Get the current UTC time string from the response
+        string utcTimeString = weatherInfo["current_weather"]["time"];
+        Debug.Log("UTC Time String: " + utcTimeString);
+
+        // Parse the UTC time string
+        DateTime utcTime;
+        string utcFormat = "yyyy-MM-ddTHH:mm"; // Adjust the format if needed
+        if (!DateTime.TryParseExact(utcTimeString, utcFormat, null, System.Globalization.DateTimeStyles.None, out utcTime))
+        {
+            Debug.LogError("Failed to parse UTC time");
+            yield break;
+        }
+
+        // Convert UTC time to local time
+        TimeZoneInfo timeZone = TimeZoneInfo.FindSystemTimeZoneById(timeZoneId);
+        DateTime localTime = TimeZoneInfo.ConvertTimeFromUtc(utcTime, timeZone);
+        Debug.Log("Local Time: " + localTime);
+
         bool isDay = localTime.Hour >= 6 && localTime.Hour < 18;
 
         currentWeatherText.text = "Current weather: " + GetWeatherDescription(weatherInfo["current_weather"]["weathercode"].AsInt);
         tempText.text = "Current temperature: " + Mathf.Floor(weatherInfo["current_weather"]["temperature"].AsFloat) + "°C";
 
         int weatherCode = weatherInfo["current_weather"]["weathercode"].AsInt;
-        float shortwaveRadiation = weatherInfo["hourly"]["shortwave_radiation"][0].AsFloat; // Assuming the first entry corresponds to the current hour
+        float shortwaveRadiation = weatherInfo["hourly"]["shortwave_radiation"][0].AsFloat;
 
         ApplyWeatherEffect(weatherCode, isDay);
 
-        OnWeatherDataUpdated?.Invoke(shortwaveRadiation, isDay); // Raise the event
+        OnWeatherDataUpdated?.Invoke(shortwaveRadiation, isDay);
 
-        print(weatherInfo["current_weather"]["weathercode"]);
+        Debug.Log(weatherInfo["current_weather"]["weathercode"]);
     }
 
     private string GetWeatherDescription(int weatherCode)
@@ -141,7 +201,6 @@ public class AppManager : MonoBehaviour
                 if (isDay) weatherController.RainDay();
                 else weatherController.RainNight();
                 break;
-
             case 95:
             case 96:
             case 99:
@@ -159,10 +218,8 @@ public class AppManager : MonoBehaviour
 
         if (timer <= 0)
         {
-            StopCoroutine("GetWeather");
             StartCoroutine(GetWeather(lat, lon));
-            print("App Refresh");
-
+            Debug.Log("App Refresh");
             timer = appRefresh;
         }
     }

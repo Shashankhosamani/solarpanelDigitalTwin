@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{872B6CF3-69C5-89C4-B1EC-E5610EFB9D97}</ProjectGuid>
+    <ProjectGuid>{1B063F2E-A13A-9EBF-5391-711BEBBDB8E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.RenderPipelines.HighDefinition.Editor</AssemblyName>
@@ -58,330 +58,330 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\EditorDefaultSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Shadow\ShadowCascadeGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\LightUnit\LightUnitSliderSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\MaterialUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\SceneTemplates\HDRPBasicScenePipeline.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDStructs.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\NormalMapFilteringTexturePostprocessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Nodes\HDSceneColorNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\BaseLitGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\ShaderGraph\HDLitData.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\ModelPostProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedHDRenderPipelineAsset.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\BaseUnlitGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\DecalSurfaceInputsUIBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\TargetData\IRequiresData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\StackLit\ShaderGraph\StackLitSurfaceOptionPropertyBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\ShaderGraph\DecalSubTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\SerializedCompositionManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\ShaderGraph\DecalSubTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\TargetData\BuiltinData.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Fabric\ShaderGraph\FabricSurfaceOptionPropertyBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\ScleraIrisBlend.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\CompositionManagerEditor.Styles.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\TerrainLit\StandardsTerrainToHDTerrainLitUpgrader.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\IndirectLightingControllerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedScalableSettingValue.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\DiffusionProfile\DiffusionProfileMaterialUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\CompositorWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LightingShaderGraphGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightUI.Handles.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\LightingSubTarget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\ProbeVolumeControllerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\HDShaderGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Hair\ShaderGraph\CreateHairShaderGraph.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\VolumetricLighting\SerializedDensityVolume.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Shadow\HDShadowSettingsEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\ChromaticAberrationEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PackageInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\MaterialHeaderScope.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\HDLightingWindowEnvironmentSection.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\ShaderGraph\HDUnlitSubTarget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXAbstractParticleHDRPLitOutput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\HDIESImporterEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\HDLitMasterNode1.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXDistortionMeshOutput.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\EyeSubTarget.Migration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\ScleraUVLocation.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Shadow\ContactShadowsEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Raytracing\RayTracingSettingsEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\ShaderGraphUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\SketchupMaterialDescriptionPostprocessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\CompositionManagerEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\ProbeVolume\ProbeVolumeUI.Drawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\DecalLayerEnumPropertyDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Views\DiffusionProfileSlotControlView.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\UnlitsToHDUnlitUpgrader.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDProbeUI.Handles.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\ShaderGraph\HDUnlitDistortionPropertyBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\CorneaRefraction.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\FBXMaterialDescriptionPostprocessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\MaterialExternalReferences.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDIESImporter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDShaderUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\CustomPass\DrawRenderersCustomPassDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\SurfaceOptionUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\ShaderGraph\DecalSubTarget.Migration.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\StackLitMasterNode1.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\VFXHDRPBinder.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\EyeSubTarget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightExplorerExtension.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\ShaderGraph\CreateHDUnlitShaderGraph.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\CirclePupilAnimation.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\CustomPass\CustomPassDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\ShaderGraph\DecalData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\FilmGrainEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\CustomPass\CustomPassDrawerAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXLitQuadStripOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LayerListUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\LiftGammaGainEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Slots\DiffusionProfileInputMaterialSlot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedScalableSetting.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedPlanarReflectionProbe.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\DiffusionProfileSettingsListUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\VisualEnvironmentEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Nodes\ExposureNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Drawers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\ScalableSettingLevelParameterEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Raytracing\SubSurfaceScatteringEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\DecalSortingInputsUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDRenderPipelineUI.Skin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\DecalProjectorEditor.Skin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\EyeSurfaceOptionPropertyBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\SerializedCompositionLayer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LitSurfaceInputsUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Hair\ShaderGraph\HairSubTarget.Migration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\SerializedInfluenceVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedVirtualTexturingSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\TransparencyUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\SeriallizedShaderProperty.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedProbeSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\LightUnit\LightUnitSlider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDProbeEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\IrisOutOfBoundColorClamp.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\SubTargetPropertiesGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\CubeLutImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\SkySettingsEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\SurfaceOptionPropertyBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXLitSphereOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\StandardsToHDLitMaterialUpgrader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\HDRISky\HDRISkyEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Hair\ShaderGraph\HairData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXLitPlanarPrimitiveOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\BaseShaderPreprocessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\TonemappingEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\CreateEyeShaderGraph.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\IrisUVLocation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Raytracing\RayTracingShaderPreprocessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\IUpdateable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedRenderPipelineSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedGlobalLightLoopSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDSubTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\CompositionLayerUI.Drawers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\ShaderGraphVersion.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Nodes\DiffusionProfileNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\ThreeDSMaterialDescriptionPostprocessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LayeringOptionsUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Wizard\HDWizard.Window.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\DiffusionProfile\DiffusionProfileSettingsEditor.Styles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\VolumetricLighting\DensityVolumeEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Handles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\ExposureEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\RefractionUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\ScleraLimbalRing.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\FBXArnoldSurfaceMaterialDescriptionPreprocessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\ShaderGraph\HDLitSubTarget.Migration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\LitGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\ShaderPropertyUI.Drawers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedHDReflectionProbe.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDStructFields.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Wizard\HDWizard.UIElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\StackLit\ShaderGraph\StackLitSubTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LitShaderGraphGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\AdditionalShadowDataEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\DecalMenuItems.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\DepthOfFieldEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\VolumetricLighting\VolumetricMenuItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\TargetData\LightingData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Gizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\ShaderGraph\DecalGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedHDShadowInitParameters.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Slots\DefaultMaterialSlot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\MaterialPostProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\HDAnalytics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\ShaderGraph\HDUnlitGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\AxfMainSurfaceInputsUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\TrackballUIDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDMetadata.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\SceneTemplates\HDRPBasicDxrScenePipeline.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\CustomPass\CustomPassVolumeEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\StackLit\ShaderGraph\StackLitData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Raytracing\GlobalIlluminationEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedXRSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\DecalMasterNode1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\PlanarReflectionProbeEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\EyeSurfaceTypeDebug.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\PhysicalMaterial3DsMaxPreprocessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightUI.Skin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDFields.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\ChannelMixerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\DiffusionProfilePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\StackLit\ShaderGraph\StackLitSubTarget.Migration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\EyeMasterNode1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\AxfSurfaceInputsUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Fabric\ShaderGraph\FabricSubTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXDistortionQuadStripOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDReflectionProbeEditor.ProbeUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDScreenSpaceReflectionEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\MotionBlurEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDAssetFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\SerializedProxyVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\TessellationOptionsUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Raytracing\RecursiveRenderingEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\TargetData\SystemData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\VignetteEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\CameraSettingsUI.Drawers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\VolumeComponentWithQualityEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Core\TextureCombiner\TextureCombiner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\EditorDefaultSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\LightUnit\LightUnitSliderSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDStructs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Nodes\HDSceneColorNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\DecalSurfaceInputsUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\TargetData\IRequiresData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\StackLit\ShaderGraph\StackLitSurfaceOptionPropertyBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\CompositionManagerEditor.Styles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\DiffusionProfile\DiffusionProfileMaterialUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LightingShaderGraphGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightUI.Handles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\LightingSubTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\ProbeVolumeControllerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Shadow\HDShadowSettingsEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXAbstractParticleHDRPLitOutput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\HDIESImporterEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\HDLitMasterNode1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\ScleraUVLocation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\ShaderGraphUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\ProbeVolume\ProbeVolumeUI.Drawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Views\DiffusionProfileSlotControlView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\FBXMaterialDescriptionPostprocessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDIESImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\CustomPass\DrawRenderersCustomPassDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\SurfaceOptionUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\EyeSubTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightExplorerExtension.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDEditorUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Nodes\RayTracingQualityNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\ShaderGraph\HDUnlitData.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDAdditionalLightDataEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXDistortionPlanarPrimitiveOutput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\FilmGrainEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\ShaderGraph\DecalData.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Camera\HDAdditionalCameraEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\CustomPass\CustomPassDrawerAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\TerrainLit\TerrainLitGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\SubTargetPropertyBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXLitQuadStripOutput.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\AdvancedOptionsPropertyBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\DistortionUIBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LayerListUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LayersUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\DiffusionProfileMaterialPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\DecalSurfaceOptionsUIBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\LiftGammaGainEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Slots\DiffusionProfileInputMaterialSlot.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDBaseEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedScalableSetting.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDProbeUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\ReflectionProxyVolumeComponentEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedPlanarReflectionProbe.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Skin.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\DiffusionProfileSettingsListUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\VisualEnvironmentEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Wizard\HDWizard.Configuration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Nodes\ExposureNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\ShaderGraph\HDLitSubTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\PhysicallyBasedSky\PhysicallyBasedSkyEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\DiffusionProfileShaderProperty.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Drawers.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\ScalableSettingLevelParameterEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Raytracing\SubSurfaceScatteringEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\DecalSortingInputsUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\OverridableFrameSettingsArea.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDRenderPipelineUI.Skin.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\StaticLightingSkyEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Core\Lighting\LightLayerEnumPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\SerializedGlobalPostProcessSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXLitMeshOutput.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\CompositionFilterUI.Drawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\DecalProjectorEditor.Skin.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\UnlitGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\DecalProjectorEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\BaseUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\EyeSurfaceOptionPropertyBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\SerializedCompositionLayer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedHDProbe.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDRenderPipelineEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedHDProbe.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightUI.ContextualMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\VolumetricLighting\DensityVolumeUI.Skin.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LitSurfaceInputsUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Fabric\ShaderGraph\FabricData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Hair\ShaderGraph\HairSubTarget.Migration.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\TargetData\HDTargetData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\SerializedInfluenceVolume.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\CustomPass\FullScreenCustomPassDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedVirtualTexturingSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\AutodeskInteractiveMaterialImport.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Camera\HDCameraUI.Drawers.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\TransparencyUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\ProbeSettingsUI.Drawers.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\SeriallizedShaderProperty.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\ShaderGraph\HDUnlitSubTarget.Migration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedProbeSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\ShaderGraph\LitSurfaceOptionPropertyBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\LightUnit\LightUnitSlider.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDPropertiesHeader.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDProbeEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\IrisOutOfBoundColorClamp.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Wizard\HDProjectSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\SubTargetPropertiesGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\CubeLutImporter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDAdditionalReflectionDataEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Camera\HDCameraEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\SkySettingsEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\SurfaceOptionPropertyBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\FabricMasterNode1.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXLitSphereOutput.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedLightingQualitySettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\AxF\AxFGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\BuildProcessors\HDRPPreprocessShaders.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\ProbeVolume\ProbeVolumeEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\StandardsToHDLitMaterialUpgrader.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\HDRISky\HDRISkyEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedGlobalProbeVolumeSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Hair\ShaderGraph\HairData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXLitPlanarPrimitiveOutput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\BaseShaderPreprocessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\TonemappingEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\CreateEyeShaderGraph.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\CompositionUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\IrisUVLocation.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\ProbeVolume\ProbeVolumeUI.Skin.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Raytracing\RayTracingShaderPreprocessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\IUpdateable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedRenderPipelineSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\ShaderGraph\CreateHDLitShaderGraph.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\PathTracing\PathTracingEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDRenderPipelineUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDProbeUI.Drawers.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDReflectionProbeEditor.Gizmos.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDProbeUI.Skin.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedGlobalLightLoopSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDSubTarget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\FrameSettingsUI.Drawers.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\HairMasterNode1.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Hair\ShaderGraph\HairSubTarget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\CompositionLayerUI.Drawers.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\SurfaceSubTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXAbstractDistortionOutput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\ShaderGraphVersion.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Nodes\DiffusionProfileNode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\ThreeDSMaterialDescriptionPostprocessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\FrameSettingsUI.Drawers.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\SerializedHDLight.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\DiffusionProfileOverrideEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDBlockFields.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LayeringOptionsUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\DefaultSettingsPanel.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RayTracing\SolidAngleKernelGenerator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Wizard\HDWizard.Window.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\DiffusionProfile\DiffusionProfileSettingsEditor.Styles.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedPostProcessingQualitySettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\VolumetricLighting\DensityVolumeEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\ShaderGraph\DecalPropertyBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Handles.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Hair\ShaderGraph\HairAdvancedOptionsPropertyBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\DecalUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\ExposureEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Shadow\MicroShadowingEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\ReflectionMenuItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\AtmosphericScattering\FogEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\RefractionUIBlock.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\ReflectionMenuItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\BloomEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\ScleraLimbalRing.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\ShaderGraph\HDLitSubTarget.Migration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\FBXArnoldSurfaceMaterialDescriptionPreprocessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDRenderPipelineMenuItems.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\LitGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\MaterialUIBlockList.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\ShaderPropertyUI.Drawers.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\AssetVersion.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedHDReflectionProbe.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\VFXHDRPSubOutput.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\AdvancedOptionsUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\EyeData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDStructFields.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedCameraSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDReflectionProbeEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Wizard\HDWizard.UIElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\StackLit\ShaderGraph\StackLitSubTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\SerializedCameraSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedDynamicResolutionSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\LitShaderGraphGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\AdditionalShadowDataEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\DecalMenuItems.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\ShaderGraphMaterialsUpdater.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\DepthOfFieldEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Camera\HDCameraUI.Skin.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedLowResTransparencySettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\ShaderGraph\HDUnlitSurfaceOptionPropertyBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\PassDescriptorExtension.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\ColorCurvesEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\PassDescriptorExtension.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\IrisOffset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\VolumetricLighting\VolumetricMenuItem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\TargetData\LightingData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\InfluenceVolumeUI.Gizmos.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedGlobalDecalSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\ShaderGraph\DecalGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedHDShadowInitParameters.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\DiffusionProfile\DiffusionProfileSettingsEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Slots\DefaultMaterialSlot.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Decal\ShaderGraph\CreateDecalShaderGraph.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDBakedReflectionSystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\MaterialPostProcessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\HDAnalytics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Unlit\ShaderGraph\HDUnlitGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\AxfMainSurfaceInputsUIBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\TrackballUIDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Camera\HDCameraEditor.Handlers.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\CustomPass\CustomPassVolumeEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDMetadata.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\StackLit\ShaderGraph\StackLitData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\SceneTemplates\HDRPBasicDxrScenePipeline.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\ShadowsMidtonesHighlightsEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Raytracing\GlobalIlluminationEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedXRSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\DecalMasterNode1.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\PlanarReflectionProbeEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDShaderPasses.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\DistortionPropertyBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\EyeSurfaceTypeDebug.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\QualitySettingsPanel.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssetProcessors\PhysicalMaterial3DsMaxPreprocessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\HDLightUI.Skin.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\SerializedFrameSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Nodes\EmissionNode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDFields.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\HDUnlitMasterNode1.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Upgraders\UpgradeStandardShaderMaterials.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\ChannelMixerEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\DiffusionProfilePropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Sky\GradientSky\GradientSkyEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Compositor\SerializedCompositionFilter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\StackLit\ShaderGraph\StackLitSubTarget.Migration.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Eye\ShaderGraph\Node\IrisLimbalRing.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\StackLit\ShaderGraph\CreateStackLitShaderGraph.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\VirtualTexturingSettingsUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\Legacy\EyeMasterNode1.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\AxfSurfaceInputsUIBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Fabric\ShaderGraph\FabricSubTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\ProxyVolumeUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXDistortionQuadStripOutput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDReflectionProbeEditor.ProbeUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDScreenSpaceReflectionEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\MotionBlurEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDEditorCLI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Lit\LitShaderPreprocessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\SerializedReflectionProxyVolumeComponent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\BuildProcessors\HDRPPreprocessBuild.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\ProbeVolume\SerializedProbeVolume.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\HDAssetFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\BuildProcessors\HDRPPreprocessBuild.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Camera\SerializedHDCamera.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\MaterialEditorExtension.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\DetailInputsUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Fabric\ShaderGraph\CreateFabricShaderGraph.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\Volume\SerializedProxyVolume.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\ScreenSpaceRefractionEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\LayeredLit\LayeredLitGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\TessellationOptionsUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RayTracing\ReflectionKernelGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\VolumetricLighting\DensityVolumeUI.Drawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\HDReflectionProbeEditor.Preview.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Raytracing\RecursiveRenderingEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\EmissionUIBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\VFXGraph\Outputs\VFXLitCubeOutput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\TargetData\SystemData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\Reflection\CameraSettingsUI.Drawers.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\PostProcessing\VignetteEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\UIBlocks\UnlitSurfaceInputsUIBlock.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\VolumeComponentWithQualityEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\RenderPipeline\Settings\FrameSettingsUI.Skin.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\ShaderGraph\HDSubShaderUtilities.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Lighting\AmbientOcclusionEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Core\TextureCombiner\TextureCombiner.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.high-definition@10.5.1\Editor\Material\Fabric\ShaderGraph\FabricSubTarget.Migration.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1295,43 +1295,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.RenderPipelines.HighDefinition.Runtime.csproj">
-      <Project>{B2465776-2DC0-E8C7-A096-7E1FA31FB529}</Project>
+      <Project>{E1EF7787-D022-D488-4EFA-C0D43AD373C1}</Project>
       <Name>Unity.RenderPipelines.HighDefinition.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ShaderGraph.Editor.csproj">
-      <Project>{350AA498-366A-A31E-4E3B-4BA23A70C33E}</Project>
+      <Project>{AAA42479-A744-C7DD-F191-83A7E42E3599}</Project>
       <Name>Unity.ShaderGraph.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
-      <Project>{F61C52BF-C088-9952-3AD9-5E9A418EEB70}</Project>
+      <Project>{8BF8A0B8-AD23-C196-05E1-6C567C4596F7}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
-      <Project>{78559AE4-7825-A54F-5946-86D3BA587EDB}</Project>
+      <Project>{EC46613F-7D51-9F59-B9E8-95049D351902}</Project>
       <Name>Unity.RenderPipelines.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualEffectGraph.Editor.csproj">
-      <Project>{65E9443C-9553-5350-BD44-972B894795D1}</Project>
+      <Project>{AD85CAFF-6B86-96CC-D484-02DFE4565BBA}</Project>
       <Name>Unity.VisualEffectGraph.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime.csproj">
-      <Project>{1169AEA0-448F-FF1C-D8F6-77C69951DD33}</Project>
+      <Project>{534BDAF2-6158-9D4A-7DAF-19853463F5A6}</Project>
       <Name>Unity.RenderPipelines.HighDefinition.Config.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{75AD7EE9-CE22-D4EA-6F5C-93DF60AB5699}</Project>
+      <Project>{B6F16083-E2A9-6164-1D6C-8E79F85B2069}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{2F9DFBF5-9539-1C53-D582-4895D298F21F}</Project>
+      <Project>{15104686-FEAC-A9A4-355D-6AEBBD24C745}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{724FA3D9-458A-E8A2-F0F6-76A7EB19E518}</Project>
+      <Project>{607659B9-FDC8-44F6-B6A9-E39E9C88EF3B}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{A77F7ABF-4855-BB85-F846-F6CF2BB39F01}</Project>
+      <Project>{E9EF854C-0B4E-D07D-E824-2D55343B2FE1}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
