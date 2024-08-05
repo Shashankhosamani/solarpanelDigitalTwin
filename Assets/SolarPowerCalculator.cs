@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic; // Ensure this is included
 using UnityEngine;
 using UnityEngine.Networking;
 using SimpleJSON;
@@ -8,52 +9,53 @@ using UnityEngine.UI;
 public class SolarPowerCalculator : MonoBehaviour
 {
     public Text solarPowerText;
-    public InputField latitudeInput;
-    public InputField longitudeInput;
+    public InputField latitudeInputField;
+    public InputField longitudeInputField;
     public Button submitButton;
     public SolarPanel[] solarPanels;
-
     private float latitude;
     private float longitude;
 
     void Start()
     {
-        // Initialize latitude and longitude
-        latitude = 0f;
-        longitude = 0f;
-
-        // Add listener to submit button
+        // Add listener to the submit button to update latitude, longitude and fetch data
         submitButton.onClick.AddListener(OnSubmit);
 
-        // Optionally, you can also add listeners to input fields if you want to handle changes directly
-        // latitudeInput.onEndEdit.AddListener(OnLatitudeChanged);
-        // longitudeInput.onEndEdit.AddListener(OnLongitudeChanged);
+        // Initialize latitude and longitude with the input field values
+        UpdateLatitude();
+        UpdateLongitude();
     }
 
     public void OnSubmit()
     {
-        if (float.TryParse(latitudeInput.text, out float lat))
+        UpdateLatitude();
+        UpdateLongitude();
+        StopAllCoroutines(); // Stop any ongoing data fetch routines
+        StartCoroutine(UpdateSolarPowerData());
+    }
+
+    void UpdateLatitude()
+    {
+        if (float.TryParse(latitudeInputField.text, out float lat))
         {
             latitude = lat;
         }
         else
         {
             Debug.LogError("Invalid latitude input");
-            return;
         }
+    }
 
-        if (float.TryParse(longitudeInput.text, out float lon))
+    void UpdateLongitude()
+    {
+        if (float.TryParse(longitudeInputField.text, out float lon))
         {
             longitude = lon;
         }
         else
         {
             Debug.LogError("Invalid longitude input");
-            return;
         }
-
-        // Start updating solar power data with the new coordinates
-        StartCoroutine(UpdateSolarPowerData());
     }
 
     IEnumerator UpdateSolarPowerData()
@@ -65,85 +67,63 @@ public class SolarPowerCalculator : MonoBehaviour
         }
     }
 
-    public IEnumerator GetSolarPowerData(float lat, float lon)
+    IEnumerator GetSolarPowerData(float lat, float lon)
     {
-        Debug.Log($"Latitude: {lat}, Longitude: {lon}");
-
-        // URL to fetch weather data from the API
-        var weatherAPI = new UnityWebRequest($"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&hourly=temperature_2m,relative_humidity_2m,rain,weathercode,cloud_cover,visibility,shortwave_radiation&timezone=auto")
+        var weatherAPI = new UnityWebRequest($"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&hourly=temperature_2m,relative_humidity_2m,rain,weather_code,cloud_cover,visibility,shortwave_radiation&timezone=auto")
         {
             downloadHandler = new DownloadHandlerBuffer()
         };
-
-        // Send the request and wait for a response
         yield return weatherAPI.SendWebRequest();
 
-        // Check for network or HTTP errors
         if (weatherAPI.isNetworkError || weatherAPI.isHttpError)
         {
-            Debug.LogError("Failed to get data: " + weatherAPI.error);
+            Debug.LogError("Failed to get data");
             yield break;
         }
 
-        // Parse the JSON response
         JSONNode weatherInfo = JSON.Parse(weatherAPI.downloadHandler.text);
         Debug.Log(weatherInfo);
 
-        // Get the current local time string from the response
-        string localTimeString = weatherInfo["current_weather"]["time"];
-        Debug.Log("Local Time String: " + localTimeString); // Debug log
+        // Get the UTC offset from the API response
+        int utcOffsetSeconds = weatherInfo["utc_offset_seconds"].AsInt;
+        TimeSpan utcOffset = TimeSpan.FromSeconds(utcOffsetSeconds);
 
-        // Attempt to parse the local time string
-        DateTime localTime;
-        string format = "yyyy-MM-ddTHH:mm:ss"; // Adjust the format if needed
-        if (!DateTime.TryParseExact(localTimeString, format, null, System.Globalization.DateTimeStyles.None, out localTime))
+        // Get the current UTC time from the API response
+        string utcTimeString = weatherInfo["current_weather"]["time"];
+        DateTime utcTime = DateTime.Parse(utcTimeString);
+
+        // Convert UTC time to local time using the UTC offset
+        DateTime localTime = utcTime;
+        int localHour = localTime.Hour;
+       
+        Debug.Log("UTC Time: " + utcTime);
+        Debug.Log("Local Time: " + localTime);
+        Debug.Log("Local Hour: " + localHour);
+
+        // Convert the JSONNode to a list of strings
+        List<string> hourlyTimes = new List<string>();
+        foreach (JSONNode node in weatherInfo["hourly"]["time"])
         {
-            Debug.LogError("Failed to parse local time");
+            hourlyTimes.Add(node.Value);
+        }
+
+        // Find the corresponding hourly data index
+        int index = hourlyTimes.FindIndex(time => DateTime.Parse(time).Hour == localHour);
+
+        if (index == -1)
+        {
+            Debug.LogError("No matching hour found in the hourly data");
             yield break;
         }
 
-        // Determine the current hour and date
-        int currentHour = localTime.Hour;
-        string currentDate = localTime.ToString("yyyy-MM-dd");
-        Debug.Log($"Current Hour: {currentHour}, Current Date: {currentDate}");
+        float shortwaveRadiation = weatherInfo["hourly"]["shortwave_radiation"][index].AsFloat;
 
-        // Access the hourly data
-        JSONNode hourlyData = weatherInfo["hourly"];
-        JSONArray times = hourlyData["time"].AsArray;
-        JSONArray shortwaveRadiation = hourlyData["shortwave_radiation"].AsArray;
+        float totalPowerGenerated = CalculateTotalPower(shortwaveRadiation);
+        solarPowerText.text = totalPowerGenerated + " W";
 
-        // Iterate through hourly data to find the matching date and hour
-        float shortwaveRadiationValue = 0f;
-        bool dataFound = false;
-        for (int i = 0; i < times.Count; i++)
-        {
-            DateTime hourlyTime;
-            if (DateTime.TryParse(times[i], out hourlyTime))
-            {
-                if (hourlyTime.ToString("yyyy-MM-dd") == currentDate && hourlyTime.Hour == currentHour)
-                {
-                    shortwaveRadiationValue = shortwaveRadiation[i].AsFloat;
-                    dataFound = true;
-                    break;
-                }
-            }
-        }
-
-        if (!dataFound)
-        {
-            Debug.LogError("No data available for the current hour and date.");
-            yield break;
-        }
-
-        // Calculate the total power generated
-        float totalPowerGenerated = CalculateTotalPower(shortwaveRadiationValue);
-        solarPowerText.text = "Total Solar Power Generation: " + totalPowerGenerated + " W";
-
-        // Log the results
-        Debug.Log("Global Horizontal Irradiance (GHI) at hour " + currentHour + ": " + shortwaveRadiationValue + " W/m²");
+        Debug.Log("Global Horizontal Irradiance (GHI) at hour " + localHour + ": " + shortwaveRadiation + " W/m²");
         Debug.Log("Total Solar Power Generation: " + totalPowerGenerated + " W");
     }
-
 
     float CalculateTotalPower(float shortwaveRadiation)
     {
@@ -155,29 +135,5 @@ public class SolarPowerCalculator : MonoBehaviour
             totalPower += panelPower;
         }
         return totalPower;
-    }
-
-    private void OnLatitudeChanged(string value)
-    {
-        if (float.TryParse(value, out float lat))
-        {
-            latitude = lat;
-        }
-        else
-        {
-            Debug.LogError("Invalid latitude input");
-        }
-    }
-
-    private void OnLongitudeChanged(string value)
-    {
-        if (float.TryParse(value, out float lon))
-        {
-            longitude = lon;
-        }
-        else
-        {
-            Debug.LogError("Invalid longitude input");
-        }
     }
 }

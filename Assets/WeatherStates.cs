@@ -46,7 +46,7 @@ public class WeatherStates : MonoBehaviour
     public void CloudsDay()
     {
         RenderSettings.skybox = overcastSkyBox;
-        clouds.SetActive(false);
+        clouds.SetActive(true);
         rain.SetActive(false);
         nightRainClouds.SetActive(false);
         sun.SetActive(true);
@@ -81,7 +81,27 @@ public class WeatherStates : MonoBehaviour
         sun.SetActive(false);
         RenderSettings.fog = true;
     }
-   
+    public void SnowDay()
+    {
+        RenderSettings.skybox = ClearNightSky;
+        clouds.SetActive(false);
+        rain.SetActive(false);
+        nightRainClouds.SetActive(false);
+        sun.SetActive(false);
+        RenderSettings.fog = true;
+    }
+
+    public void SnowNight()
+    {
+        RenderSettings.skybox = ClearNightSky;
+        clouds.SetActive(false);
+        rain.SetActive(false);
+        nightRainClouds.SetActive(false);
+        sun.SetActive(false);
+        RenderSettings.fog = true;
+    }
+
+
 
     public void CloudCover()
     {

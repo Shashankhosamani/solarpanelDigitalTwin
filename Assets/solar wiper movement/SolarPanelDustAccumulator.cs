@@ -1,12 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class SolarPanelDustAccumulator : MonoBehaviour
 {
-    public List<Material> panelMaterials; // List of materials for the panels
-    public float dustAccumulationRate = 0.01f; // Dust increase per second
-    public Slider dustSlider; // Reference to the UI slider
+    private float dustAccumulationRate = 0.0001f; // Dust increase per second
+    public Material material; // Single material for the panel
 
     private float currentDustAmount; // Current dust amount on this panel
     private bool isAccumulating = true; // Flag to track if dust is currently accumulating
@@ -14,22 +11,15 @@ public class SolarPanelDustAccumulator : MonoBehaviour
 
     void Start()
     {
-        if (panelMaterials == null || panelMaterials.Count == 0)
+        if (material == null)
         {
-            Debug.LogError("Panel Materials not assigned to SolarPanelDustAccumulator script.");
-            enabled = false; // Disable script if materials are not assigned
+            Debug.LogError("Material not assigned to SolarPanelDustAccumulator script.");
+            enabled = false; // Disable script if material is not assigned
             return;
         }
 
-        if (dustSlider != null)
-        {
-            dustSlider.onValueChanged.AddListener(OnSliderValueChanged);
-            dustSlider.minValue = 0f;
-            dustSlider.maxValue = 1f;
-            dustSlider.value = currentDustAmount;
-        }
-
         currentDustAmount = 0f; // Initialize dust amount to clean
+        UpdateMaterialProperties();
     }
 
     void Update()
@@ -40,13 +30,7 @@ public class SolarPanelDustAccumulator : MonoBehaviour
             currentDustAmount += dustAccumulationRate * Time.deltaTime;
             currentDustAmount = Mathf.Clamp01(currentDustAmount);
 
-            // Update slider value if it exists
-            if (dustSlider != null && !dustSlider.interactable)
-            {
-                dustSlider.value = currentDustAmount;
-            }
-
-            // Update material properties for all panels
+            // Update material properties
             UpdateMaterialProperties();
         }
     }
@@ -94,16 +78,10 @@ public class SolarPanelDustAccumulator : MonoBehaviour
 
     void UpdateMaterialProperties()
     {
-        foreach (var material in panelMaterials)
+        if (material != null)
         {
             // Update shader properties or material properties based on the current dust amount
             material.SetFloat("_DustAmount", currentDustAmount);
         }
-    }
-
-    void OnSliderValueChanged(float value)
-    {
-        currentDustAmount = value;
-        UpdateMaterialProperties();
     }
 }

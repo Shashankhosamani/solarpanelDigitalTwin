@@ -2,8 +2,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
-using SimpleJSON;
 using UnityEngine.UI;
+using SimpleJSON;
 
 public class AppManager : MonoBehaviour
 {
@@ -12,54 +12,55 @@ public class AppManager : MonoBehaviour
     public Text currentWeatherText, tempText, currentTimeText;
     public WeatherStates weatherController;
 
-    // UI Elements
-    public InputField latitudeInput;
-    public InputField longitudeInput;
+    // Public fields for latitude, longitude input, and submit button
+    public InputField latitudeInputField;
+    public InputField longitudeInputField;
     public Button submitButton;
 
-    private float lat;
-    private float lon;
+    private float lat, lon;
 
-    public delegate void WeatherDataUpdated(float shortwaveRadiation, bool isDay);
-    public event WeatherDataUpdated OnWeatherDataUpdated;
-
-   void Start()
+    private void Start()
     {
-        lat = 0f; // Default latitude
-        lon = 0f; // Default longitude
+        timer = appRefresh;
 
+        // Add listener to the submit button
         submitButton.onClick.AddListener(OnSubmit);
 
-        timer = appRefresh;
+        // Initialize latitude and longitude
+        UpdateLatitudeLongitude();
     }
 
     public void OnSubmit()
     {
-        if (float.TryParse(latitudeInput.text, out float parsedLat))
+        UpdateLatitudeLongitude();
+        StopCoroutine("GetWeather");
+        StartCoroutine(GetWeather(lat, lon));
+    }
+
+    private void UpdateLatitudeLongitude()
+    {
+        if (float.TryParse(latitudeInputField.text, out float newLat))
         {
-            lat = parsedLat;
+            lat = newLat;
         }
         else
         {
             Debug.LogError("Invalid latitude input");
         }
 
-        if (float.TryParse(longitudeInput.text, out float parsedLon))
+        if (float.TryParse(longitudeInputField.text, out float newLon))
         {
-            lon = parsedLon;
+            lon = newLon;
         }
         else
         {
             Debug.LogError("Invalid longitude input");
         }
-
-        StopCoroutine(nameof(GetWeather));
-        StartCoroutine(GetWeather(lat, lon));
     }
 
     public IEnumerator GetWeather(float lat, float lon)
     {
-        var weatherAPI = new UnityWebRequest($"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&hourly=temperature_2m,cloud_cover,weathercode,shortwave_radiation&timezone=auto")
+        var weatherAPI = new UnityWebRequest($"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true&hourly=temperature_2m,cloud_cover,weathercode&timezone=auto")
         {
             downloadHandler = new DownloadHandlerBuffer()
         };
@@ -67,52 +68,28 @@ public class AppManager : MonoBehaviour
 
         if (weatherAPI.isNetworkError || weatherAPI.isHttpError)
         {
-            Debug.LogError("Failed to get data: " + weatherAPI.error);
+            print("Failed to get data");
             yield break;
         }
 
         JSONNode weatherInfo = JSON.Parse(weatherAPI.downloadHandler.text);
-        Debug.Log(weatherInfo);
 
-        // Extract the timezone from the API response
-        string timeZoneId = weatherInfo["timezone"];
-        if (string.IsNullOrEmpty(timeZoneId))
-        {
-            Debug.LogError("Time zone information is missing from the API response");
-            yield break;
-        }
-
-        // Get the current UTC time string from the response
+        // Get the UTC time from the API response
         string utcTimeString = weatherInfo["current_weather"]["time"];
-        Debug.Log("UTC Time String: " + utcTimeString);
+        DateTime utcTime = DateTime.Parse(utcTimeString);
 
-        // Parse the UTC time string
-        DateTime utcTime;
-        string utcFormat = "yyyy-MM-ddTHH:mm"; // Adjust the format if needed
-        if (!DateTime.TryParseExact(utcTimeString, utcFormat, null, System.Globalization.DateTimeStyles.None, out utcTime))
-        {
-            Debug.LogError("Failed to parse UTC time");
-            yield break;
-        }
-
-        // Convert UTC time to local time
-        TimeZoneInfo timeZone = TimeZoneInfo.FindSystemTimeZoneById(timeZoneId);
-        DateTime localTime = TimeZoneInfo.ConvertTimeFromUtc(utcTime, timeZone);
-        Debug.Log("Local Time: " + localTime);
+        // Convert UTC time to local time based on the UTC offset provided by the API
+        int utcOffsetSeconds = weatherInfo["utc_offset_seconds"].AsInt;
+        TimeSpan utcOffset = TimeSpan.FromSeconds(utcOffsetSeconds);
+        DateTime localTime = utcTime;
 
         bool isDay = localTime.Hour >= 6 && localTime.Hour < 18;
 
-        currentWeatherText.text = "Current weather: " + GetWeatherDescription(weatherInfo["current_weather"]["weathercode"].AsInt);
-        tempText.text = "Current temperature: " + Mathf.Floor(weatherInfo["current_weather"]["temperature"].AsFloat) + "°C";
 
         int weatherCode = weatherInfo["current_weather"]["weathercode"].AsInt;
-        float shortwaveRadiation = weatherInfo["hourly"]["shortwave_radiation"][0].AsFloat;
-
         ApplyWeatherEffect(weatherCode, isDay);
 
-        OnWeatherDataUpdated?.Invoke(shortwaveRadiation, isDay);
-
-        Debug.Log(weatherInfo["current_weather"]["weathercode"]);
+        print(weatherInfo["current_weather"]["weathercode"]);
     }
 
     private string GetWeatherDescription(int weatherCode)
@@ -166,9 +143,6 @@ public class AppManager : MonoBehaviour
                 else weatherController.CloudsNight();
                 break;
             case 45:
-                if (isDay) weatherController.MistDay();
-                else weatherController.MistNight();
-                break;
             case 48:
                 if (isDay) weatherController.MistDay();
                 else weatherController.MistNight();
@@ -176,30 +150,25 @@ public class AppManager : MonoBehaviour
             case 51:
             case 53:
             case 55:
-                if (isDay) weatherController.RainDay();
-                else weatherController.RainNight();
-                break;
             case 56:
             case 57:
-                if (isDay) weatherController.RainDay();
-                else weatherController.RainNight();
-                break;
             case 61:
             case 63:
             case 65:
-                if (isDay) weatherController.RainDay();
-                else weatherController.RainNight();
-                break;
             case 66:
             case 67:
-                if (isDay) weatherController.RainDay();
-                else weatherController.RainNight();
-                break;
             case 80:
             case 81:
             case 82:
                 if (isDay) weatherController.RainDay();
                 else weatherController.RainNight();
+                break;
+            case 71:
+            case 73:
+            case 75:
+            case 77:
+                if (isDay) weatherController.SnowDay();
+                else weatherController.SnowNight();
                 break;
             case 95:
             case 96:
@@ -213,13 +182,14 @@ public class AppManager : MonoBehaviour
 
     private void Update()
     {
-        currentTimeText.text = "Current time: " + DateTime.Now.ToString("HH:mm:ss");
         timer -= Time.deltaTime;
 
         if (timer <= 0)
         {
+            StopCoroutine("GetWeather");
             StartCoroutine(GetWeather(lat, lon));
-            Debug.Log("App Refresh");
+            print("App Refresh");
+
             timer = appRefresh;
         }
     }
